@@ -16,8 +16,8 @@
 
 <script>
 import TableComponent from './components/TableComponent.vue';
-import PaginationComponent from './components/PaginationComponent.vue';
-// import PaginationComponent from './components/PaginationComponent1.vue';
+// import PaginationComponent from './components/PaginationComponent.vue';
+import PaginationComponent from './components/PaginationComponent1.vue';
 import DropdownComponent from './components/DropdownComponent.vue';
 import axios from 'axios';
 

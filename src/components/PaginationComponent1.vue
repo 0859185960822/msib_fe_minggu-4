@@ -35,22 +35,22 @@
       <span v-if="currentPage < totalPages - 2">...</span>
   
       <!-- Tampilkan dua halaman terakhir -->
-      <!-- <button
-        v-for="page in [totalPages - 1, totalPages]"
+      <button
+        v-for="page in totalPages > 3 ? [totalPages - 1, totalPages] : [totalPages]"
         :key="page"
         @click="goToPage(page)"
         :class="['pagination-button', { active: currentPage === page }]"
-      >
+        >
         {{ page }}
-      </button> -->
+      </button>
 
       <!-- Tampilkan satu halaman terakhir -->
-      <button
+      <!-- <button
         @click="goToPage(totalPages)"
         :class="['pagination-button', { active: currentPage === totalPages }]"
       >
         {{ totalPages }}
-      </button>
+      </button> -->
   
       <!-- Tombol Next -->
       <button
